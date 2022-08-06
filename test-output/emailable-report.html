@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">442,046</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.script.TestCase</td><td><a href="#m0">TCID_01</a></td><td rowspan="1">1659524864873</td><td rowspan="1">423445</td></tr></tbody>
+</table>
+<h2>Default test</h2><h3 id="m0">com.script.TestCase#TCID_01</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Click On Accounts link<br/>Click On New Accounts<br/>Click On Person Account<br/>Click On Next button<br/>Click On Salutation List <br/>Click on Salutation's chevron-down || value : Mr<br/>Set first name Into the textField || value : Auto<br/>Set last name into textfield || value : Test<br/>Set Mobile number into textfield || value : 9849997477<br/>Click on save button<br/>Click on Create enquiry button<br/>Set supplier name into textfield<br/>Click on Supplier Name Option  || value : AASTHA AUTO CONSULTANT # PUNE - MBO (LAXMI MOTORS)<br/>Click On Shared with<br/>Click on SahredWith options<br/>Select SubBusiness Vertical DropDown<br/>Click On GetOTP<br/>Click On ConsentForm<br/>Select Buisness model DropDown<br/>Scroll Down And Click On EMI<br/>Click On save and Continue<br/>Scroll Up, Wait and Select IDproof dropdown<br/>Set ID proof Expiry Date into textField<br/>Set ID proof reference number<br/>click on Upload Document file<br/>Scroll on upload files<br/>Scroll Down, Wait and Select DOB<br/>set DOB into textfield<br/>set SDHO First Name into textfield<br/>set SDHO First Name into textfield<br/>set SDHO First Name into textfield<br/>Set credit card number into textfield<br/>Click On Credit Card bank Textfield<br/>choose credit card bank from the dropdown<br/>Click On Marital status<br/>choose marital status from the dropdown<br/>click on Demographic details link<br/>Select SubBusiness Vertical DropDown<br/>Set Address proof reference number<br/>Click On OKYC status<br/>choose Residence status from the dropdown<br/>click on Upload Document file<br/>set presentAddress  into textfield<br/>set presentAddress2  into textfield<br/>set LandMark into textfield<br/>set Pincode into textfield<br/>Scroll Down till residence status textfield<br/>Click on the distance<br/>choose Residence status from the dropdown<br/>Scroll Down till residence status textfield<br/>Click On Residence status<br/>choose Residence status from the dropdown<br/>Set residing into textfield<br/>Click On Property status<br/>choose Residence status from the dropdown<br/>select same as permenent<br/>Click on button save and continue<br/>Click On Primary Employment Textfield<br/>choose Primary employment option from the list<br/>Click On Type of Employment Textfield<br/>choose Type of employment option from the list<br/>Click On Primary Employment Textfield<br/>click on company name textfield<br/>Set Working Period in textfield<br/>click on save and continue button<br/>Set model in textfield</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at org.testng.Assert.assertTrue(Assert.java:66)
+	at com.utilities.CommonFunctions.generateLog(CommonFunctions.java:182)
+	at com.pages.CreateEnquiryPage.setModel(CreateEnquiryPage.java:546)
+	at com.views.CreateEnquiryView.loanDetails(CreateEnquiryView.java:90)
+	at com.script.TestCase.TCID_01(TestCase.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
